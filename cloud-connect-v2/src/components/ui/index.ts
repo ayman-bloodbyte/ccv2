@@ -1,5 +1,6 @@
 export { Badge } from './Badge'
 export { Button } from './Button'
 export { Card } from './Card'
+export { SensorChip } from './SensorChip'
 export { StatusDot } from './StatusDot'
 export { SensorValue } from './SensorValue'

@@ -1,6 +1,6 @@
 import { cn } from '@/lib/cn'
 
-type Status = 'online' | 'warning' | 'offline'
+type Status = 'online' | 'warning' | 'offline' | 'unknown'
 
 interface StatusDotProps {
   status: Status
@@ -12,6 +12,7 @@ const statusColors: Record<Status, string> = {
   online: 'bg-[var(--color-success)]',
   warning: 'bg-[var(--color-warning)]',
   offline: 'bg-[var(--color-danger)]',
+  unknown: 'bg-[#3B82F6]',
 }
 
 export function StatusDot({ status, pulse = true, className }: StatusDotProps) {
